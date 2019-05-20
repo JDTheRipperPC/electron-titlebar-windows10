@@ -42,6 +42,14 @@
       // You can also require other files to run in this process
       require('./renderer.js')
     </script>
+    <script>
+        var segmld2_font = new FontFace('Segoe MDL2 Assets', 'url(fonts/SegMDL2.ttf)');
+        segmld2_font.load().then(function(loaded_face) {
+          document.fonts.add(loaded_face);
+        }).catch(function(error) {
+          console.error("Error loading Segoe MDL2 Assets Font");
+        });
+    </script>
   </body>
 
 </html>
