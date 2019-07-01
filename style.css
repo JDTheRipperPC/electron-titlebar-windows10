@@ -20,9 +20,9 @@ body {
   
 #titlebar {
     display: block;
-    position: fixed;
+    position: relative;
     height: 32px;
-    width: calc(100% - 2px); /*Compensate for body 1px border*/
+    width: 100%;
     background: #254053;
 }
   
